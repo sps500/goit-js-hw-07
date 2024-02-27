@@ -2,7 +2,7 @@
   const loginForm = document.querySelector('.login-form');
 
   loginForm.addEventListener('submit', function(event) {
-    event.preventDefault(); // Забороняємо стандартну поведінку форми
+    event.preventDefault();
 
     const emailInput = loginForm.elements['email'];
     const passwordInput = loginForm.elements['password'];
@@ -18,10 +18,9 @@
         password: passwordValue
       };
 
-      console.log(formData); // Виводимо об'єкт з введеними даними в консоль
+      console.log(formData); 
 
-      loginForm.reset(); // Очищаємо значення полів форми
-    }
+      loginForm.reset(); 
   });
 
 

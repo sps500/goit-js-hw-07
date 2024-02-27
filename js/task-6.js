@@ -9,7 +9,7 @@ const input = document.querySelector('input');
   const boxesContainer = document.getElementById('boxes');
 
   function createBoxes(amount) {
-    boxesContainer.innerHTML = ''; // Очистка колекції перед створенням нової
+    boxesContainer.innerHTML = ''; 
 
     let size = 30;
 
@@ -35,5 +35,5 @@ const input = document.querySelector('input');
   });
 
   destroyButton.addEventListener('click', () => {
-    boxesContainer.innerHTML = ''; // Очищення колекції
+    boxesContainer.innerHTML = '';
   });

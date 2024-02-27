@@ -3,12 +3,12 @@
   const nameOutput = document.getElementById('name-output');
 
   nameInput.addEventListener('input', function() {
-    const trimmedValue = nameInput.value.trim(); // Очищаємо значення від пробілів по краях
+    const trimmedValue = nameInput.value.trim(); 
 
     if (trimmedValue === '') {
-      nameOutput.textContent = 'Anonymous'; // Якщо значення порожнє, встановлюємо "Anonymous"
+      nameOutput.textContent = 'Anonymous'; 
     } else {
-      nameOutput.textContent = trimmedValue; // Інакше встановлюємо введене ім'я
+      nameOutput.textContent = trimmedValue; 
     }
   });
 
